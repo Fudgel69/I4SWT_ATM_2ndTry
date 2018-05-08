@@ -25,11 +25,14 @@ namespace ATM.Application
 
         private static void PrintTracks(List<TrackData> tracks)
         {
+            Console.Clear();
+            System.Console.WriteLine("=================================================");
+            Console.SetCursorPosition(0, Console.CursorTop);
             foreach (var track in tracks)
             {
                 System.Console.WriteLine(track);                
             }
-            System.Console.WriteLine("==============================================");
+            System.Console.WriteLine("=================================================");
         }
 
         
