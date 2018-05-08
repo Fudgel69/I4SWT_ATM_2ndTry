@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using ATM_Classes.Data;
-using ATM_Classes.Decoding;
-using ATM_Classes.Interfaces;
+using ATM.Classes.Data;
+using ATM.Classes.Decoding;
+using ATM.Classes.Interfaces;
 using NSubstitute;
 using NUnit.Framework;
 using TransponderReceiver;
@@ -10,7 +10,7 @@ namespace ATM.Unit.Test
 {
     [TestFixture]
 
-    class DecodingWithEventTest
+    class DecodingTest
     {
         private ITrackDecoding _uut;
         private ITransponderReceiver _receiver;
@@ -21,7 +21,7 @@ namespace ATM.Unit.Test
         public void Setup()
         {
             _receiver = Substitute.For<ITransponderReceiver>();
-            _uut = new DecodingWithEvent(_receiver);
+            _uut = new Decoding(_receiver);
 
             _fakeTransponderData = new RawTransponderDataEventArgs(new List<string>()
                 { "TRK001;12345;67890;12000;20151014123456789" }

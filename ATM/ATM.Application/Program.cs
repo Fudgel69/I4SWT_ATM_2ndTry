@@ -4,8 +4,8 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using ATMClasses.Data;
-using ATMClasses.Decoding;
+using ATM.Classes.Data;
+using ATM.Classes.Decoding;
 using TransponderReceiver;
 
 namespace AppWithEvent
@@ -16,7 +16,7 @@ namespace AppWithEvent
         {
             ITransponderReceiver transponderDataReceiver = TransponderReceiverFactory.CreateTransponderDataReceiver();
 
-            var decoder = new DecodingWithEvent(transponderDataReceiver);
+            var decoder = new Decoding(transponderDataReceiver);
 
             decoder.TrackDataReady += (o, trackArgs) => PrintTracks(trackArgs.TrackData);
 

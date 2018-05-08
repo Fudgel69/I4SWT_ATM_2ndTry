@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ATM_Classes.Data
+namespace ATM.Classes.Data
 {
     public class TrackData
     {

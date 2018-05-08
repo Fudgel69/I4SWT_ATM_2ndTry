@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using ATM_Classes.Data;
-using ATM_Classes.Interfaces;
+using ATM.Classes.Data;
+using ATM.Classes.Interfaces;
 using TransponderReceiver;
 
-namespace ATM_Classes.Decoding
+namespace ATM.Classes.Decoding
 {
-    public class DecodingWithEvent : ITrackDecoding
+    public class Decoding : ITrackDecoding
     {
         private List<TrackData> trackList;
         public event EventHandler<TrackDataEventArgs> TrackDataReady;
 
-        public DecodingWithEvent(ITransponderReceiver rawReceiver)
+        public Decoding(ITransponderReceiver rawReceiver)
         {
             rawReceiver.TransponderDataReady += OnRawData;
 

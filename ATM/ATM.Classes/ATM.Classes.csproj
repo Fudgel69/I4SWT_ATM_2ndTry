@@ -7,8 +7,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6A73004F-A0D3-40CC-99F8-0141CB908315}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ATM_Classes</RootNamespace>
-    <AssemblyName>ATM_Classes</AssemblyName>
+    <RootNamespace>ATM.Classes</RootNamespace>
+    <AssemblyName>ATM.Classes</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

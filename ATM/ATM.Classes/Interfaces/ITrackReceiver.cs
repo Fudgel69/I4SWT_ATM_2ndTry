@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using ATM_Classes.Data;
+using ATM.Classes.Data;
 
-namespace ATM_Classes.Interfaces
+namespace ATM.Classes.Interfaces
 {
     public interface ITrackReceiver
     {
