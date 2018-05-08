@@ -8,7 +8,7 @@ using ATM.Classes.Data;
 using ATM.Classes.Decoding;
 using TransponderReceiver;
 
-namespace AppWithEvent
+namespace ATM.Application
 {
     class Program
     {
@@ -29,6 +29,9 @@ namespace AppWithEvent
             {
                 System.Console.WriteLine(track);                
             }
+            System.Console.WriteLine("==============================================");
         }
+
+        
     }
 }

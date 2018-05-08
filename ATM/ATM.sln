@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM.Unit.Test", "ATM.Unit.Test\ATM.Unit.Test.csproj", "{C3D24CF3-0AD9-46F9-8112-8DFFCA6B4F60}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM.Application", "ATM.Application\ATM.Application.csproj", "{4F61A755-3F71-4E20-93EA-1BADDDBE268B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3D24CF3-0AD9-46F9-8112-8DFFCA6B4F60} = {C3D24CF3-0AD9-46F9-8112-8DFFCA6B4F60}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
